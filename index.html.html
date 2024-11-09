@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card Design</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            font-family: "poppins";
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color:white;
+        }
+        .image{
+            position: relative;
+            width: 135px;
+            height: 130px;
+
+        }
+        .image img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            padding: 2px;
+            border: 4px solid #1f57f1;
+        }
+        .profilecard{
+            max-width: 330px;
+            width: 100%;
+            background-color:#6a8be625;
+            border-radius: 24px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .profilecard .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .text .text1{
+            color: rgb(41, 39, 39);
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .text .text2{
+            color: rgb(86, 81, 81);
+
+            font-size: 13px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        .profilecard .mediabtns{
+            display: flex;
+            align-items: center;
+            
+        }
+        .link{
+            background-color: #4070f4;
+            margin: 3px 8px;
+            text-decoration: none;
+            height: 30px;
+            width: 30px;
+            align-items: center;
+            justify-content:center;
+            display: flex;
+            border-radius: 50%;
+            color: white;
+            font-size: 18px;
+
+        }
+        .buttons{
+            margin-top: 15px;
+        }
+        .btn1, .btn2{
+            background-color: #1f57f1;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    width: 100px;
+    color: white;
+    font-size: 11px;
+    font-weight: 500;
+    margin: 5px 2px;
+    transition: all 0.2s ease;
+        }
+        .btn1:hover{
+            background-color: #1e00ff;
+        }
+        .btn2:hover{
+            background-color: #1e00ff;
+        }
+        .mediabtns .link:hover {
+    transform: scale(1.1); /* Scale down on hover */
+    transition: all 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+        }
+    </style>
+</head>
+<body>
+    <div class="profilecard">
+        <div class="image">
+            <img src="../Documents/asset/myface3.jpg" alt="face">
+        </div>
+         <div class="text">
+            <div class="text1">Sahil Kapoor</div>
+            <div class="text2">Intermediate Level Web Developer</div>
+         </div>
+         <div class="mediabtns">
+            <a href="#" class="link"style="background-color:blue">
+                <i class='bx bxl-facebook' ></i>
+            </a>
+            <a href="#" class="link" style="background: linear-gradient(45deg, #e7963f 0%,#e6683c 25%,#dc2743 50%,#de1062 75%,#ae0277 100%); " >
+                <i class='bx bxl-instagram' ></i>
+            </a>
+            <a href="#" class="link">
+                <i class='bx bxl-twitter'></i>
+            </a>
+            <a href="#" class="link" style="background-color: red;">
+                <i class='bx bxl-youtube'></i>
+            </a>
+         </div>
+         <div class="buttons">
+            <button class="btn1">Contact Me</button>
+            <button class="btn2">Explore More</button>
+         </div>
+
+    </div>
+</body>
+</html>
